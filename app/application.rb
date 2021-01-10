@@ -8,9 +8,9 @@ class Application
     current_time = "#{time_hour}:#{time_min}"
     resp.write "Current time is: #{current_time}"
     if current_time >= 12
-      puts "It's currently #{current_time}. Thus it is past 12"
+      resp.write "It's currently #{current_time}. Thus it is past 12"
     else
-      puts "It is not past 12 yet. Go to bed."
+      resp.write "It is not past 12 yet. Go to bed."
     end
     resp.finish
   end
