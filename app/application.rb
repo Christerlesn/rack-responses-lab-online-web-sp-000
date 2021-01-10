@@ -1,4 +1,3 @@
-require 'pry'
 class Application
   def call(env)
     resp = Rack::Response.new
@@ -8,8 +7,11 @@ class Application
     time_min = t.min
     current_time = "#{time_hour}:#{time_min}"
     resp.write "Current time is: #{current_time}"
-    binding.pry
-    #if current_time >= 12
+    if current_time >= 12
+      puts "It's currently #{current_time}. Thus it is past 12"
+    else
+      puts "It is not past 12 yet. Go to bed."
+    end
     resp.finish
   end
 end
