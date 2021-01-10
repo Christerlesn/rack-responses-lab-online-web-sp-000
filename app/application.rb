@@ -9,7 +9,7 @@ class Application
     current_time = "#{time_hour}:#{time_min}"
     resp.write "Current time is: #{current_time}"
     binding.pry
-    if current_time >= 12
+    #if current_time >= 12
     resp.finish
   end
 end
