@@ -9,7 +9,7 @@ class Application
     resp.write "Current time is: #{current_time}\n"
 
     if t != 12
-      resp.write "It's currently #{current_time}. Thus it is past 12"
+      resp.write "It's currently #{current_time}. It is past 12"
     else
       resp.write "It is not past 12 yet. Go to bed."
     end
