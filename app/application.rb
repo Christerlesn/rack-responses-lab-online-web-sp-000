@@ -7,7 +7,7 @@ class Application
     time_min = t.min
     current_time = "#{time_hour}:#{time_min}"
     resp.write "Current time is: #{current_time}"
-    if current_time >= 12
+    if current_time >= 12:00
       resp.write "It's currently #{current_time}. Thus it is past 12"
     else
       resp.write "It is not past 12 yet. Go to bed."
